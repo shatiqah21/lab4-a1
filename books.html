@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON and jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        // JSON Data
+        const books = [
+            {
+                title: "The Great Gatsby",
+                author: "F. Scott Fitzgerald",
+                publicationYear: 1925,
+                genres: ["Fiction", "Classics"]
+            },
+            {
+                title: "To Kill a Mockingbird",
+                author: "Harper Lee",
+                publicationYear: 1960,
+                genres: ["Fiction", "Coming-of-Age"]
+            }
+        ];
+
+        // Display data in the browser console
+        console.log("Title of the first book:", books[0].title);
+        console.log("Author of the second book:", books[1].author);
+        console.log("Genres of all books:", books.map(book => book.genres).flat());
+    </script>
+</body>
+</html>
